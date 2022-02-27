@@ -75,3 +75,12 @@ elif a == b:
     print("Don't know")
 else:
     print('YES')
+
+# 4.3.4 Напишите программу, которая принимает три положительных числа и определяет вид треугольника
+a, b, c = int(input()), int(input()), int(input())
+if a == b == c:
+    print('Равносторонний')
+elif (a == b !=c) or (a == c != b) or (c == b != a):
+    print('Равнобедренный')
+else:
+    print('Разносторонний')
