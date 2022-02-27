@@ -65,3 +65,13 @@ if ((a - 1) <= c <= (a + 1)) and ((b - 1) <= d <= (b + 1)):
     print('YES')
 else:
     print('NO')
+
+# 4.3.3 Если Зум быстрее Флэша нужно вывести «NO», если Флэш быстрее Зума нужно вывести «YES», 
+# если их скорости равны нужно вывести "Don't know"
+a, b = int(input()), int(input())
+if a > b:
+    print('NO')
+elif a == b:
+    print("Don't know")
+else:
+    print('YES')
