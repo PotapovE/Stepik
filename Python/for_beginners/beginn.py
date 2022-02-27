@@ -80,7 +80,26 @@ else:
 a, b, c = int(input()), int(input()), int(input())
 if a == b == c:
     print('Равносторонний')
-elif (a == b !=c) or (a == c != b) or (c == b != a):
+elif (a == b != c) or (a == c != b) or (c == b != a):
     print('Равнобедренный')
 else:
     print('Разносторонний')
+
+# 4.3.5 Даны три различных целых числа. Напишите программу, которая находит среднее по величине число.
+a, b, c = int(input()), int(input()), int(input())
+if a > b:
+    if a < c:
+        print(a)
+    else:
+        if c > b:
+            print(c)
+        else:
+            print(b)
+else:
+    if a > c:
+        print(a)
+    else:
+        if c > b:
+            print(b)
+        else:
+            print(c)
