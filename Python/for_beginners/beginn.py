@@ -36,3 +36,10 @@ if (999 < x < 10000) and (x % 7 == 0 or x % 17 == 0):
     print('YES')
 else:
     print('NO')
+
+# 4.2.12 Напишите программу, которая принимает три положительных числа и определяет, существует ли невырожденный треугольник
+a, b, c = int(input()), int(input()), int(input())
+if a < (b + c) and b < (a + c) and c < (a + b):
+    print('YES')
+else:
+    print('NO')
