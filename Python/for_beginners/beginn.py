@@ -103,3 +103,12 @@ else:
             print(b)
         else:
             print(c)
+
+# 4.3.6 Напишите программу, которая выводит на экран количество дней в этом месяце
+month = int(input())
+if month == 2:
+    print(28)
+elif month in (4, 6, 9, 11):
+    print(30)
+else:
+    print(31)
