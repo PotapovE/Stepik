@@ -50,3 +50,11 @@ if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
     print('YES')
 else:
     print('NO')
+
+# 4.2.14 Даны две различные клетки шахматной доски. Напишите программу, которая определяет, 
+# может ли ладья попасть с первой клетки на вторую одним ходом
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+if (a == c) or (b == d):
+    print('YES')
+else:
+    print('NO')
