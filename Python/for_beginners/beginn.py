@@ -217,3 +217,10 @@ print(area)
 s, v1, v2 = float(input()), float(input()), float(input())
 time = s / (v1 + v2)
 print(time)
+
+# 6.1.5 Напишите программу, которая считывает с клавиатуры одно число и выводит обратное ему.
+x = float(input())
+if x:
+    print(1 / x)
+else:
+    print('Обратного числа не существует')
