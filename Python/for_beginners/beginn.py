@@ -315,3 +315,8 @@ elif dis == 0:
     print((-b) / (2 * a))
 else:
     print('Нет корней')
+
+# 6.2.8 Напишите программу, которая находит площадь указанного правильного многоугольника.
+from math import pi, tan
+n, a = int(input()), float(input())
+print((n * pow(a, 2)) / (4 * tan(pi / n)))
