@@ -275,3 +275,9 @@ print(abs(coordinates[0] - coordinates[2]) + abs(coordinates[1] - coordinates[3]
 from math import sqrt
 x1, y1, x2, y2 = [float(input()) for _ in range(4)]
 print(sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2))
+
+# 6.2.3 Напишите программу определяющую площадь круга и длину окружности по заданному радиусу
+from math import pi
+rad = float(input())
+print(pi * rad ** 2)
+print(2 * pi * rad)
