@@ -295,3 +295,8 @@ print(sqrt((a ** 2 + b ** 2) / 2))
 from math import sin, cos, tan, radians
 x = radians(float(input()))
 print(sin(x) + cos(x) + pow(tan(x), 2))
+
+# 6.2.6 Программа должна вывести одно число – значение указанного выражения. |_x_| + -|x|-
+from math import floor, ceil
+x = float(input())
+print(floor(x) + ceil(x))
