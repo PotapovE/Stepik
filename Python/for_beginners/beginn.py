@@ -289,3 +289,9 @@ print((a + b) / 2)
 print(sqrt(a * b))
 print((2 * a * b) / (a + b))
 print(sqrt((a ** 2 + b ** 2) / 2))
+
+# 6.2.5 Напишите программу, вычисляющую значение тригонометрического выражения sin(x) + cos(x) + tan^2(x)
+# по заданному числу градусов x.
+from math import sin, cos, tan, radians
+x = radians(float(input()))
+print(sin(x) + cos(x) + pow(tan(x), 2))
