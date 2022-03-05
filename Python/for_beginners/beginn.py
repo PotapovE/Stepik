@@ -281,3 +281,11 @@ from math import pi
 rad = float(input())
 print(pi * rad ** 2)
 print(2 * pi * rad)
+
+# 6.2.4 Программа должна вывести 4 числа – среднее арифметическое, геометрическое, гармоническое и квадратичное.
+from math import sqrt
+a, b = [float(input()) for _ in range(2)]
+print((a + b) / 2)
+print(sqrt(a * b))
+print((2 * a * b) / (a + b))
+print(sqrt((a ** 2 + b ** 2) / 2))
