@@ -247,3 +247,9 @@ print(x - int(x))
 a = [int(input()) for _ in range(5)]
 print('Наименьшее число =', min(a))
 print('Наибольшее число =', max(a))
+
+# 6.1.13 Напишите программу, которая упорядочивает три числа от большего к меньшему.
+a = [int(input()) for _ in range(3)]
+rev_a = sorted(a, reverse=True)
+for i in rev_a:
+    print(i)
