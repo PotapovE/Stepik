@@ -300,3 +300,18 @@ print(sin(x) + cos(x) + pow(tan(x), 2))
 from math import floor, ceil
 x = float(input())
 print(floor(x) + ceil(x))
+
+# 6.2.7 Напишите программу, которая находит вещественные корни квадратного уравнения.
+from math import sqrt
+a, b, c = [float(input()) for _ in range(3)]
+dis = b ** 2 - 4 * a * c
+x1, x2 = 0, 0
+if dis > 0:
+    x1 = (- b + sqrt(dis)) / (2 * a)
+    x2 = (- b - sqrt(dis)) / (2 * a)
+    print(min(x1, x2))
+    print(max(x1, x2))
+elif dis == 0:
+    print((-b) / (2 * a))
+else:
+    print('Нет корней')
