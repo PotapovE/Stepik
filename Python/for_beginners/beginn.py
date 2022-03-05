@@ -212,3 +212,8 @@ elif a1 < a2:
 a, b = float(input()), float(input())
 area = (1 / 2) * a * b
 print(area)
+
+# 6.1.4 Две старушки идут навстречу друг другу с постоянными скоростями. Определите, через какое время старушки встретятся.
+s, v1, v2 = float(input()), float(input()), float(input())
+time = s / (v1 + v2)
+print(time)
