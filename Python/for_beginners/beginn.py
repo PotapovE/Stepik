@@ -270,3 +270,8 @@ print(sum([abs(float(input())) for _ in range(5)]))
 # 6.1.16 Напишите программу определяющую манхэттенское расстояние между двумя точками, координаты которых заданы.
 coordinates = [int(input()) for _ in range(4)]
 print(abs(coordinates[0] - coordinates[2]) + abs(coordinates[1] - coordinates[3]))
+
+# 6.2.2 Напишите программу определяющую евклидово расстояние между двумя точками, координаты которых заданы.
+from math import sqrt
+x1, y1, x2, y2 = [float(input()) for _ in range(4)]
+print(sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2))
