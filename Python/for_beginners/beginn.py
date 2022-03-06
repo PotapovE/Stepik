@@ -337,3 +337,7 @@ print(*sorted([input() for _ in range(3)], key=len)[::2], sep='\n')
 # Напишите программу, которая выясняет можно ли из длин этих строк построить возрастающую арифметическую прогрессию.
 words_len = sorted([len(input()) for _ in range(3)])
 print('YES' if words_len[1] - words_len[0] == words_len[2] - words_len[1] else 'NO')
+
+# 6.3.12 Напишите программу, которая считывает одну строку, 
+# после чего выводит «YES», если в введенной строке есть подстрока «синий» и «NO» в противном случае.
+print('YES' if "синий" in input() else 'NO')
