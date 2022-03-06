@@ -323,3 +323,6 @@ print((n * pow(a, 2)) / (4 * tan(pi / n)))
 
 # 6.3.5 Напишите программу, которая выводит текст.
 print('"Python is a great language!", said Fred. "I don\'t ever remember having this much fun before."')
+
+# 6.3.6 Напишите программу, которая считывает с клавиатуры две строки – имя и фамилию пользователя и выводит фразу.
+print(f'Hello {input()} {input()}! You just delved into Python')
