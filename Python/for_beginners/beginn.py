@@ -326,3 +326,6 @@ print('"Python is a great language!", said Fred. "I don\'t ever remember having 
 
 # 6.3.6 Напишите программу, которая считывает с клавиатуры две строки – имя и фамилию пользователя и выводит фразу.
 print(f'Hello {input()} {input()}! You just delved into Python')
+
+# 6.3.7 Напишите программу, которая считывает с клавиатуры название футбольной команды и выводит фразу.
+print(f'Футбольная команда {(team := input())} имеет длину {len(team)} символов')
