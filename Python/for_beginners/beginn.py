@@ -394,3 +394,9 @@ for i in range(n + 1):
 n = int(input())
 for i in range(n, 0, -1):
     print('*' * i)
+
+# 7.1.10 Напишите программу, которая предсказывает размер популяции организмов.
+m, p, n = [int(input()) for _ in range(3)]
+for i in range(n):
+    print(i + 1, m)
+    m += (m / 100 * p)
