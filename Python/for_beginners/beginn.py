@@ -430,3 +430,8 @@ m, n = [int(input()) for _ in range(2)]
 for i in range(m, n + 1):
     if (i % 17 == 0) or (i % 10 == 9) or (i % 15 == 0):
         print(i)
+
+# 7.2.11 Дано натуральное число n. Напишите программу, которая выводит таблицу умножения на n.
+n = int(input())
+for i in range(1, 11):
+    print(f'{n} x {i} = {n * i}')
