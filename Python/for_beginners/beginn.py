@@ -400,3 +400,8 @@ m, p, n = [int(input()) for _ in range(3)]
 for i in range(n):
     print(i + 1, m)
     m += (m / 100 * p)
+
+# 7.2.7 Даны два целых числа m, n. m <= n. Напишите программу, которая выводит все числа [m, n].
+m, n = [int(input()) for _ in range(2)]
+for i in range(m, n + 1):
+    print(i)
