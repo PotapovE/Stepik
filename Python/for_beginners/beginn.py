@@ -405,3 +405,13 @@ for i in range(n):
 m, n = [int(input()) for _ in range(2)]
 for i in range(m, n + 1):
     print(i)
+
+# 7.2.8 Даны два целых числа m и n. Напишите программу, которая выводит все числа от m до n включительно 
+# в порядке возрастания, если m < n, или в порядке убывания в противном случае.
+m, n = [int(input()) for _ in range(2)]
+if m < n:
+    for i in range(m, n + 1):
+        print(i)
+else:
+    for i in range(m, n - 1, -1):
+        print(i)
