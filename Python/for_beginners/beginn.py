@@ -355,3 +355,9 @@ print('YES' if '@' in text and '.' in text else 'NO')
 # 7.1.2 Напишите программу, которая выводит слова «Python is awesome!» (без кавычек) 10 раз.
 for _ in range(10):
     print('Python is awesome!')
+
+# 7.1.3 Дано предложение и количество раз которое его надо повторить. 
+# Напишите программу, которая повторяет данное предложение нужное количество раз.
+text, count = input(), int(input())
+for _ in range(count):
+    print(text)
