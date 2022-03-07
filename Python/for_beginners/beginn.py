@@ -351,3 +351,7 @@ print('YES' if ("суббота" in text) or ("воскресенье" in text) 
 # Напишите программу проверяющую корректность email адреса.
 text = input()
 print('YES' if '@' in text and '.' in text else 'NO')
+
+# 7.1.2 Напишите программу, которая выводит слова «Python is awesome!» (без кавычек) 10 раз.
+for _ in range(10):
+    print('Python is awesome!')
