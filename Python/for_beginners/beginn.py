@@ -435,3 +435,13 @@ for i in range(m, n + 1):
 n = int(input())
 for i in range(1, 11):
     print(f'{n} x {i} = {n * i}')
+
+# 7.3.5 На вход программе подаются два целых числа a и b (a≤b). 
+# Напишите программу, которая подсчитывает количество чисел в диапазоне от a до b включительно, 
+# куб которых оканчивается на 44 или 99.
+counter = 0
+a, b = [int(input()) for _ in range(2)]
+for i in range(a, b + 1):
+    if i ** 3 % 10 == 4 or i ** 3 % 10 == 9:
+        counter += 1
+print(counter)
