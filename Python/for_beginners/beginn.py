@@ -493,3 +493,18 @@ print(sum([i for i in range(1, n + 1) if n % i == 0]))
 # 7.3.12 На вход программе подается натуральное число n. Напишите программу вычисления знакочередующей суммы.
 n = int(input())
 print(sum([- i if i % 2 == 0 else i for i in range(1, n + 1)]))
+
+# 7.3.13 На вход программе подается натуральное число n, а затем nn различных натуральных чисел, каждое на отдельной строке. 
+# Напишите программу, которая выводит наибольшее и второе наибольшее число последовательности.
+largest1, largest2 = 0, 0
+for i in range(int(input())):
+    num = int(input())
+    if num > largest1:
+        largest2 = largest1
+        largest1 = num
+    if num > largest2 and num < largest1:
+        largest2 = num
+print(largest1, largest2, sep='\n')
+# or
+large = sorted([int(input()) for _ in range(int(input()))])
+print(large[-1], large[-2], sep='\n')
