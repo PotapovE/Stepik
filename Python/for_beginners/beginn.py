@@ -477,3 +477,11 @@ total = 1
 for i in range(1, n + 1):
     total *= i
 print(total)
+
+# 7.3.10 Напишите программу, которая считывает 10 чисел и выводит произведение отличных от нуля чисел.
+total = 1
+for _ in range(10): 
+    num = int(input())
+    if num: 
+        total *= num
+print(total)
