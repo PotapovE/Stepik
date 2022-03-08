@@ -508,3 +508,12 @@ print(largest1, largest2, sep='\n')
 # or
 large = sorted([int(input()) for _ in range(int(input()))])
 print(large[-1], large[-2], sep='\n')
+
+# 7.3.14 Напишите программу, которая считывает последовательность из 10 целых чисел и определяет 
+# является ли каждое из них четным или нет.
+flag = True
+numbers = [int(input()) for _ in range(10)]
+for i in numbers:
+    if i % 2 != 0:
+        flag = False
+print('YES' if flag else 'NO')
