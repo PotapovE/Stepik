@@ -485,3 +485,7 @@ for _ in range(10):
     if num: 
         total *= num
 print(total)
+
+# 7.3.11 На вход программе подается натуральное число n. Напишите программу, которая вычисляет сумму всех его делителей.
+n = int(input())
+print(sum([i for i in range(1, n + 1) if n % i == 0]))
