@@ -563,3 +563,14 @@ total, number = 0, int(input())
 while number >= 0:
     total, number = total + number, int(input())
 print(total)
+
+# 7.4.13 На вход программе подается последовательность целых чисел от 11 до 55, характеризующее оценку ученика, 
+# каждое число на отдельной строке. Концом последовательности является любое отрицательное число, либо число большее 55. 
+# Напишите программу, которая выводит количество пятерок.
+counter = 0
+rating = int(input())
+while rating in (1, 2, 3, 4, 5):
+    if rating == 5:
+        counter += 1
+    rating = int(input())
+print(counter)
