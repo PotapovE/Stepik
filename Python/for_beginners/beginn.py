@@ -517,3 +517,9 @@ for i in numbers:
     if i % 2 != 0:
         flag = False
 print('YES' if flag else 'NO')
+
+# 7.3.15 Напишите программу, которая считывает натуральное число n и выводит первые n чисел последовательности Фибоначчи.
+x1, x2 = 1, 1
+for _ in range(int(input())):
+    print(x1, end=' ')
+    x1, x2 = x2, x1 + x2
