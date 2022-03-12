@@ -654,3 +654,13 @@ for i in range(1, n + 1):
     for j in range(1, 10):
         print(f'{i} + {j} = {i + j}')
     print()
+
+# 7.8.8 Дано нечетное натуральное число n. Напишите программу, которая печатает равнобедренный звездный треугольник 
+# с основанием, равным n в соответствии с примером/
+from math import ceil
+
+n = ceil(int(input()) / 2)
+for i in range(1, n + 1):
+    print('*' * i)
+for i in range(n - 1, 0, -1):
+    print('*' * i)
