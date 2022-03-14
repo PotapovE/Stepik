@@ -671,3 +671,12 @@ for i in range(1, n + 1):
     for j in range(1, i + 1):
         print(i, end='')
     print()
+
+# 7.9.1 Дано натуральное число n. Напишите программу, которая печатает численный треугольник с высотой равной n.
+n = int(input())
+counter = 0
+for i in range(1, n + 1):
+    for _ in range(i):
+        counter += 1
+        print(counter, end=' ')
+    print()
