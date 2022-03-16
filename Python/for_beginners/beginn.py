@@ -689,3 +689,19 @@ for i in range(1, n + 1):
     for k in range(i - 1, 0, -1):
         print(k, end='')        
     print()
+
+# 7.9.3 На вход программе подается два натуральных числа a и b (a < b). Напишите программу, 
+# которая находит натуральное число из отрезка [a; b] с максимальной суммой делителей.
+a, b = int(input()), int(input())
+total = 0
+largest_num = 0
+large_total = 0
+for i in range(a, b + 1):
+    for j in range(1, i + 1):
+        if i % j == 0:
+            total += j
+    if total >= large_total:
+        large_total = total
+        largest_num = i
+    total = 0
+print(largest_num, large_total)
