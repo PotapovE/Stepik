@@ -736,3 +736,14 @@ for i in range(1, int(input()) + 1):
     total += factorial
     factorial = 1
 print(total)
+
+# 7.9.7 На вход программе подается два натуральных числа a и b (a < b). Напишите программу, 
+# которая находит все простые числа от a до b включительно.
+a, b = int(input()), int(input())
+for i in range(a, b + 1):
+    counter = 0
+    for j in range(1, i + 1):
+        if i % j == 0:
+            counter += 1
+    if counter == 2:
+        print(i)
