@@ -779,3 +779,12 @@ text = input()
 counter_plus = text.count('+')
 counter_mult = text.count('*')
 print(f'Символ + встречается {counter_plus} раз\nСимвол * встречается {counter_mult} раз')
+
+# 9.1.13 На вход программе подается одна строка. 
+# Напишите программу, которая определяет сколько в ней одинаковых соседних символов.
+text = input()
+counter = 0
+for i in range(len(text) - 1):
+    if text[i] == text[i + 1]:
+        counter += 1
+print(counter)
