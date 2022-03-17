@@ -809,3 +809,5 @@ while n != 0:
     total += str(n % 2)
     n //= 2
 print(total[::-1])
+# Ревью
+print(bin(int(input()))[2::])
