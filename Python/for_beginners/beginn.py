@@ -772,3 +772,10 @@ for i in input():
         flag = False
         break
 print('Цифр нет' if flag else 'Цифра')
+
+# 9.1.12 На вход программе подается одна строка. 
+# Напишите программу, которая определяет сколько раз в строке встречаются символы + и *.
+text = input()
+counter_plus = text.count('+')
+counter_mult = text.count('*')
+print(f'Символ + встречается {counter_plus} раз\nСимвол * встречается {counter_mult} раз')
