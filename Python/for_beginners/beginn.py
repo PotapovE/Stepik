@@ -870,3 +870,10 @@ print(input().count(' ') + 1)
 s = input().lower()
 s_a, s_g, s_c, s_t = s.count('а'), s.count('г'), s.count('ц'), s.count('т')
 print(f'Аденин: {s_a}', f'Гуанин: {s_g}', f'Цитозин: {s_c}', f'Тимин: {s_t}', sep='\n')
+
+# 9.4.10 Программа должна вывести количество строк в которых содержится число 11 минимум 3 раза.
+counter = 0
+for _ in range(int(input())):
+    if input().count('11') >= 3:
+        counter += 1
+print(counter)
