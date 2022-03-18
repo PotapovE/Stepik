@@ -829,3 +829,11 @@ print(len(text), text * 3, text[0], text[:3], text[-3:], text[::-1], text[1:-1],
 # все символы строки через один в обратном порядке, начиная с последнего.
 text = input()
 print(text[2], text[-2], text[:5], text[:-2], text[::2], text[1::2], text[::-1], text[-1::-2], sep='\n')
+
+# 9.2.14 На вход программе подается строка текста. Напишите программу, которая разрежет ее на две равные части, 
+# переставит их местами и выведет на экран.
+from math import ceil
+
+text = input()
+count = ceil(len(text) / 2)
+print(text[count:] + text[:count])
