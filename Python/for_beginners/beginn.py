@@ -877,3 +877,11 @@ for _ in range(int(input())):
     if input().count('11') >= 3:
         counter += 1
 print(counter)
+
+# 9.4.11 На вход программе подается строка текста. Напишите программу, которая подсчитывает количество цифр в данной строке.
+s = input()
+counter = 0
+for c in s:
+    if c.isdigit():
+        counter += 1
+print(counter)
