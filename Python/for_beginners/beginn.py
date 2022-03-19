@@ -935,3 +935,8 @@ print(f'In {year}, someone paid {amount} {currency} for two pizzas.')
 # выводит соответствующий ему символ из таблицы символов Unicode.
 for i in range(int(input()), int(input()) + 1):
     print(chr(i), end=' ')
+
+# 9.6.5 На вход программе подается строка текста. Напишите программу, 
+# которая переводит каждый ее символ в соответствующий ему код из таблицы символов Unicode.
+for c in input():
+    print(ord(c), end=' ')
