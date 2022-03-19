@@ -919,8 +919,13 @@ else:
 s = input()
 print(s[:s.find('h')], s[s.rfind('h') + 1:], sep='')
 
-# 9.5.3 Дополните приведенный код, используя форматирование строк с помощью метода format, так чтобы он вывел текст: 
+# 9.5.7 Дополните приведенный код, используя форматирование строк с помощью метода format, так чтобы он вывел текст: 
 # «In 2010, someone paid 10k Bitcoin for two pizzas.» (без кавычек).
 s = 'In {0}, someone paid {1} {2} for two pizzas.'
 year, price, currency = '2010', '10k', 'Bitcoin'
 print(s.format(year, price, currency))
+
+# 9.5.8 Дополните приведенный код, используя форматирование строк с помощью f-строк, так чтобы он вывел текст: 
+# «In 2010, someone paid 10K Bitcoin for two pizzas.» (без кавычек).
+year, amount, currency = 2010, '10K', 'Bitcoin'
+print(f'In {year}, someone paid {amount} {currency} for two pizzas.')
