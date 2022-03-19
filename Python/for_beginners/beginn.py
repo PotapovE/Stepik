@@ -929,3 +929,9 @@ print(s.format(year, price, currency))
 # «In 2010, someone paid 10K Bitcoin for two pizzas.» (без кавычек).
 year, amount, currency = 2010, '10K', 'Bitcoin'
 print(f'In {year}, someone paid {amount} {currency} for two pizzas.')
+
+# 9.6.4 На вход программе подаются два числа a и b. 
+# Напишите программу, которая для каждого кодового значения в диапазоне от a до b (включительно), 
+# выводит соответствующий ему символ из таблицы символов Unicode.
+for i in range(int(input()), int(input()) + 1):
+    print(chr(i), end=' ')
