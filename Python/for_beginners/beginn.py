@@ -995,5 +995,10 @@ k = int(input()) - 1
 for i in range(len(s)):
     if k < len(s[i]):
         print(str(s[i])[k], end='')
-    else:
-        continue
+
+# 11.3.14 На вход программе подается натуральное число n, а затем n строк.
+# Напишите программу, которая создает список из символов всех строк, а затем выводит его.
+s = []
+for _ in range(int(input())):
+    s.extend(input())
+print(s)
