@@ -952,3 +952,7 @@ for c in input():
         print(chr(122 - (96 - new_chr)), end='')
     else:
         print(chr(new_chr), end='')
+
+
+# 11.1.8 На вход программе подается одно число n. Напишите программу, которая выводит список [1, 2, 3, ..., n].
+print(list(range(1, int(input()) + 1)))
