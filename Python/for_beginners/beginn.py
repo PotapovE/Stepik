@@ -1038,3 +1038,16 @@ for i in n:
     if find in i.lower():
         answer.append(i)
 print(*answer, sep='\n')
+
+# 11.4.7 На вход программе подается натуральное число n, затем n строк, затем число k — количество поисковых запросов, 
+# затем k строк — поисковые запросы. Напишите программу, которая выводит все введенные строки, 
+# в которых встречаются все поисковые запросы.
+n = [input() for _ in range(int(input()))]
+find = [input().lower() for _ in range(int(input()))]
+for i in n:
+    count = 0
+    for j in find:
+        if j in i.lower():
+            count += 1
+        if count == len(find):
+            print(i)
