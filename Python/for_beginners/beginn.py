@@ -1019,3 +1019,12 @@ print(*n, '', *x, sep='\n')
 # а затем выводит оставшиеся числа каждое на отдельной строке, не меняя их порядок.
 n = [int(input()) for _ in range(int(input()))]
 print(*[i for i in n if i not in (min(n), max(n))], sep='\n')
+
+# 11.4.5 На вход программе подается натуральное число n, а затем n строк. 
+# Напишите программу, которая выводит только уникальные строки, в том же порядке, в котором они были введены.
+n = [input() for _ in range(int(input()))]
+answer = []
+for i in n:
+    if i not in answer:
+        answer.append(i)
+print(*answer, sep='\n')
