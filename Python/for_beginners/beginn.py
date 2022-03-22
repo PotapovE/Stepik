@@ -1028,3 +1028,13 @@ for i in n:
     if i not in answer:
         answer.append(i)
 print(*answer, sep='\n')
+
+# 11.4.6 На вход программе подается натуральное число n, затем n строк, затем еще одна строка — поисковый запрос. 
+# Напишите программу, которая выводит все введенные строки, в которых встречается поисковый запрос.
+n = [input() for _ in range(int(input()))]
+find = input().lower() 
+answer = []
+for i in n:
+    if find in i.lower():
+        answer.append(i)
+print(*answer, sep='\n')
