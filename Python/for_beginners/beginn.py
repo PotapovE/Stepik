@@ -1051,3 +1051,17 @@ for i in n:
             count += 1
         if count == len(find):
             print(i)
+
+# 11.4.8 На вход программе подается натуральное число n, а затем n целых чисел. 
+# Напишите программу, которая сначала выводит все отрицательные числа, затем нули, а затем все положительные числа, 
+# каждое на отдельной строке. Числа должны быть выведены в том же порядке, в котором они были введены.
+negatives, zeros, positives = [], [], []
+for _ in range(int(input())):
+    n = int(input()) 
+    if n > 0:
+        positives.append(n)
+    elif n < 0:
+        negatives.append(n)
+    else:
+        zeros.append(n)
+print(*negatives, *zeros, *positives, sep='\n')
