@@ -23,3 +23,7 @@ SELECT * FROM book
 
 1.2.3 Выбрать авторов, название книг и их цену из таблицы book.
 SELECT author, title, price FROM book
+
+1.2.4 Выбрать названия книг и авторов из таблицы book, для поля title задать имя(псевдоним) Название, для поля author –  Автор. 
+SELECT title AS Название, author AS Автор
+FROM book
