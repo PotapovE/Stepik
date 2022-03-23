@@ -66,3 +66,10 @@ WHERE (price < 500 OR price > 600) AND ((price * amount) >= 5000)
 SELECT title, author
 FROM book
 WHERE (price BETWEEN 540.50 AND 800) AND (amount IN (2, 3, 5, 7))
+
+1.2.11 Вывести  автора и название  книг, количество которых принадлежит интервалу от 2 до 14 (включая границы). 
+Информацию  отсортировать сначала по авторам (в обратном алфавитном порядке), а затем по названиям книг (по алфавиту).
+SELECT author, title
+FROM book
+WHERE amount BETWEEN 2 AND 14
+ORDER BY author DESC, title;
