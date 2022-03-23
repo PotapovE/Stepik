@@ -20,3 +20,6 @@ SELECT * FROM book
 
 1.2.2 Вывести информацию о всех книгах, хранящихся на складе.
 SELECT * FROM book
+
+1.2.3 Выбрать авторов, название книг и их цену из таблицы book.
+SELECT author, title, price FROM book
