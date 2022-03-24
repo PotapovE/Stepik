@@ -1065,3 +1065,6 @@ for _ in range(int(input())):
     else:
         zeros.append(n)
 print(*negatives, *zeros, *positives, sep='\n')
+
+# 11.5.3 На вход программе подается строка текста. Напишите программу, которая выводит слова введенной строки в столбик.
+[print(i) for i in input().split()]
