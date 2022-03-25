@@ -92,3 +92,9 @@ FROM book
 SELECT author AS Автор, COUNT(amount) AS Различных_книг, SUM(amount) AS Количество_экземпляров
 FROM book
 GROUP BY author
+
+1.3.4 Вывести фамилию и инициалы автора, минимальную, максимальную и среднюю цену книг каждого автора. 
+Вычисляемые столбцы назвать Минимальная_цена, Максимальная_цена и Средняя_цена соответственно.
+SELECT author, MIN(price) AS Минимальная_цена, MAX(price) AS Максимальная_цена, AVG(price) Средняя_цена
+FROM book
+GROUP BY author
