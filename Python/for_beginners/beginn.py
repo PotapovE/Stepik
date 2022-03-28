@@ -1142,3 +1142,21 @@ for _ in range(int(n[1])):
 n = [int(i) for i in input().split()]
 print(*sorted(n))
 print(*sorted(n, reverse=True))
+
+# <бонус> Римские цифры в арабские
+s = list(input())
+dict = {'I': 1, 'IV': 4, 'V': 5, 'IX': 9, 'X': 10, 'XL': 40, 'L': 50, 'XC': 90, 'C': 100, 'CD': 400, 'D': 500, 'CM': 900, 'M': 1000}
+iskl = ['IV', 'IX', 'XL', 'XC', 'CD', 'CM']
+count, total = 0, 0
+while count < len(s):
+    if count + 1 < len(s):
+        if s[count] + s[count + 1] in iskl:
+            total += dict[s[count] + s[count + 1]]
+            count += 2
+        else:
+            total += dict[s[count]]
+            count += 1
+    else:
+        total += dict[s[count]]
+        count += 1
+print(total)
