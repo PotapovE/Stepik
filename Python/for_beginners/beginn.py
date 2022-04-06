@@ -1211,3 +1211,17 @@ def get_next_prime(num):
     return num 
 n = int(input())
 print(get_next_prime(n))
+
+# 13.5.5 Напишите функцию is_password_good(password), которая принимает в качестве аргумента строковое значение пароля password 
+# и возвращает значение True если пароль является надежным и False в противном случае.
+# Пароль является надежным если: его длина не менее 8 символов; он содержит как минимум одну заглавную букву (верхний регистр); 
+# он содержит как минимум одну строчную букву (нижний регистр); он содержит хотя бы одну цифру.
+def is_password_good(password):
+    if len(password) > 7:
+        if password.lower() != password:
+            if password.upper() != password:
+                if len([i for i in password if i.isdigit()]) > 0:
+                    return True
+    return False
+txt = input()
+print(is_password_good(txt))
