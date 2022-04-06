@@ -1190,3 +1190,11 @@ def is_valid_triangle(a, b, c):
     return a < (b + c) and b < (a + c) and c < (a + b)
 a, b, c = int(input()), int(input()), int(input())
 print(is_valid_triangle(a, b, c))
+
+# 13.5.3 Напишите функцию is_prime(num), которая принимает в качестве аргумента натуральное число 
+# и возвращает значение True если число является простым и False в противном случае.
+def is_prime(num):
+    s = [i for i in range(1, num + 1) if num % i == 0]
+    return len(s) == 2
+n = int(input())
+print(is_prime(n))
