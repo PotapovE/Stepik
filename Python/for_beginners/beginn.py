@@ -1198,3 +1198,16 @@ def is_prime(num):
     return len(s) == 2
 n = int(input())
 print(is_prime(n))
+
+# 13.5.4 Напишите функцию get_next_prime(num), которая принимает в качестве аргумента натуральное число num 
+# и возвращает первое простое число большее числа num.
+def is_prime(num):
+    s = [i for i in range(1, num + 1) if num % i == 0]
+    return len(s) != 2
+def get_next_prime(num):
+    num += 1
+    while is_prime(num):
+        num += 1
+    return num 
+n = int(input())
+print(get_next_prime(n))
