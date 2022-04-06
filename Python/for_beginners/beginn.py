@@ -1182,3 +1182,11 @@ print(''.join(i for i in input() if i.isdigit()))
 # Напишите программу, использующую списочное выражение, которая выведет квадраты четных чисел, 
 # которые не оканчиваются на цифру 4.
 print(*[i ** 2 for i in map(int, input().split()) if i % 10 in (0, 4, 6)])
+
+# 13.5.2 Напишите функцию is_valid_triangle(side1, side2, side3), которая принимает в качестве аргументов три натуральных числа, 
+# и возвращает значение True если существует невырожденный треугольник со сторонами side1, side2, side3 
+# и False в противном случае.
+def is_valid_triangle(a, b, c):
+    return a < (b + c) and b < (a + c) and c < (a + b)
+a, b, c = int(input()), int(input()), int(input())
+print(is_valid_triangle(a, b, c))
