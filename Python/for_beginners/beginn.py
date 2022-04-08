@@ -1237,3 +1237,11 @@ def is_one_away(word1, word2):
 txt1 = input()
 txt2 = input()
 print(is_one_away(txt1, txt2))
+
+# 13.5.7 Напишите функцию is_palindrome(text), которая принимает в качестве аргумента строку text 
+# и возвращает значение True если указанный текст является палиндромом и False в противном случае.
+def is_palindrome(text):
+    s = [i for i in txt if i not in ' .,-?!']
+    return s == s[::-1]
+txt = input().lower()
+print(is_palindrome(txt))
