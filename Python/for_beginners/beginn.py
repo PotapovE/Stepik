@@ -1245,3 +1245,25 @@ def is_palindrome(text):
     return s == s[::-1]
 txt = input().lower()
 print(is_palindrome(txt))
+
+# 13.5.8 BEEGEEK наконец открыл свой банк в котором используются специальные банкоматы с необычным паролем.
+# Действительный пароль BEEGEEK банка имеет вид a:b:c, где a, b и c – натуральные числа. 
+# Поскольку основатель BEEGEEK фанатеет от математики, то он решил:
+# число a – должно быть палиндромом; число b – должно быть простым; число c – должно быть четным.
+# Напишите функцию is_valid_password(password), которая принимает в качестве аргумента строковое значение пароля password 
+# и возвращает значение True если пароль является действительным паролем BEEGEEK банка и False в противном случае.
+def is_valid_password(password):
+    if len(password) == 3:
+        if password[0] == password[0][::-1]:
+            counter = 0
+            for i in range(1, int(password[1]) + 1):                
+                if int(password[1]) % i == 0:
+                    counter += 1
+                    if counter > 2:
+                        break
+            if counter == 2:
+                if int(password[2]) % 2 == 0:
+                    return True
+    return False
+psw = input().split(':')
+print(is_valid_password(psw))
