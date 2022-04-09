@@ -1267,3 +1267,13 @@ def is_valid_password(password):
     return False
 psw = input().split(':')
 print(is_valid_password(psw))
+
+# 13.5.9 Напишите функцию is_correct_bracket(text), которая принимает в качестве аргумента непустую строку text, 
+# состоящую из символов ( и ) и возвращает значение True если поступившая на вход строка является 
+# правильной скобочной последовательностью и False в противном случае.
+def is_correct_bracket(text):
+        while '()' in text:
+            text = text.replace('()', '')
+        return len(text) == 0 
+txt = input()
+print(is_correct_bracket(txt))
