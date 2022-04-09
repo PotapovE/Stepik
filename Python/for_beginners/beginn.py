@@ -1277,3 +1277,15 @@ def is_correct_bracket(text):
         return len(text) == 0 
 txt = input()
 print(is_correct_bracket(txt))
+
+# 13.5.10 Напишите функцию convert_to_python_case(text), которая принимает в качестве аргумента строку в «верблюжьем регистре» 
+# и преобразует его в «змеиный регистр».
+from re import sub
+# объявление функции
+def convert_to_python_case(text):
+    line = sub(r'([A-Z])', r' \1', text).lower().split()
+    return '_'.join(line)
+# считываем данные
+txt = input()
+# вызываем функцию
+print(convert_to_python_case(txt))
