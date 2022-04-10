@@ -1304,3 +1304,19 @@ x_2, y_2 = int(input()), int(input())
 # вызываем функцию
 x, y = get_middle_point(x_1, y_1, x_2, y_2)
 print(x, y)
+
+# 13.6.4 Напишите функцию get_circle(radius), которая принимает в качестве аргумента радиус окружности 
+# и возвращает два значения: длину окружности и площадь круга, ограниченного данной окружностью.
+from math import pi
+
+# объявление функции
+def get_circle(radius):
+    C = 2 * pi * radius
+    S = pi * radius ** 2
+    return C, S
+# считываем данные
+r = float(input())
+
+# вызываем функцию
+length, square = get_circle(r)
+print(length, square)
