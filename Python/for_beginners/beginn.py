@@ -1360,3 +1360,26 @@ def number_to_words(num):
 n = int(input())
 # вызываем функцию
 print(number_to_words(n))
+
+# 15.5.10 Шифр Цезаря
+def encrypt(chr, key):
+    eng_lower_alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    eng_upper_alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    if chr.isupper():
+        new_chr = eng_upper_alphabet[(eng_upper_alphabet.find(chr) + key) % 26]
+    else:
+        new_chr = eng_lower_alphabet[(eng_lower_alphabet.find(chr) + key) % 26]
+    return new_chr
+
+n = input().split()
+code = []
+for i in n:
+    count_c = len([c for c in i if c.isalpha()])
+    s = ''
+    for j in range(len(i)):
+        if i[j].isalpha():
+            s += encrypt(i[j], count_c)
+        else:
+            s += i[j]
+    code.append(s)
+print(*code)
