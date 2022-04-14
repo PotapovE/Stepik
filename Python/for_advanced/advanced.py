@@ -11,3 +11,7 @@ elif bmi > 25:
     print('Избыточная масса')
 else:
     print('Оптимальная масса')
+
+# 2.1.4 Стоимость строки
+price = len(input()) * 60
+print(f'{price // 100} р. {price % 100} коп.')
