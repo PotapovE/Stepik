@@ -15,3 +15,6 @@ else:
 # 2.1.4 Стоимость строки
 price = len(input()) * 60
 print(f'{price // 100} р. {price % 100} коп.')
+
+# 2.1.5 Количество слов
+print(len(input().split()))
