@@ -26,3 +26,6 @@ print(animals[int(input()) % 12])
 # 2.1.7 Переворот числа
 n = input()
 print(int(n[:-5] + n[:-6:-1]))
+
+# 2.1.8 Standard American Convention
+print(f'{int(input()):,}')
