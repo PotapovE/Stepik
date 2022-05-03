@@ -1,14 +1,20 @@
-﻿// Часы
+﻿// Методы генерации массива, вывода суммы его элементов
 
-int n = int.Parse(Console.ReadLine());
-int hour = n % 12;
-int min = hour * 5 + 5;
-int dop = min / 12;
-int find = min + dop;
-if (find != dop) find += 1;
-if (find >= 60) 
-{
-   find -= 60; 
-   hour = (hour + 1) % 12;
+void Main()
+    {   
+        int startValue = int.Parse(Console.ReadLine());
+        int endValue = int.Parse(Console.ReadLine());
+        PrintSum(GetCubes(startValue, endValue));   
+    }
+
+int[] GetCubes(int a, int b)
+{   
+    return Enumerable.Range(a, b - a + 1).Select(e => e * e * e).ToArray();
 }
-Console.WriteLine(find < 10 ? $"{hour}:0{find}": $"{hour}:{find}");
+
+void PrintSum(int[] arr)
+{
+    Console.WriteLine(arr.Sum());
+}
+
+Main();
