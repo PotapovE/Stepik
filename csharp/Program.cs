@@ -1,20 +1,38 @@
-﻿// Методы генерации массива, вывода суммы его элементов
+﻿// Возможные варианты решения уравнения а*b+c
 
-void Main()
-    {   
-        int startValue = int.Parse(Console.ReadLine());
-        int endValue = int.Parse(Console.ReadLine());
-        PrintSum(GetCubes(startValue, endValue));   
-    }
-
-int[] GetCubes(int a, int b)
-{   
-    return Enumerable.Range(a, b - a + 1).Select(e => e * e * e).ToArray();
-}
-
-void PrintSum(int[] arr)
+int[] GetValueNum(int number)
 {
-    Console.WriteLine(arr.Sum());
+    List<int> validNum = new List<int>();
+    int[] valid = {2, 3, 7};
+    for(int i = 2; i <= number; i++)
+    {
+        bool flag = true;
+        int data = i;
+        while (data > 0)
+        {
+            if (valid.Contains(data % 10) != true) 
+            {
+                flag = false;
+                break;
+            }
+            data /= 10;
+        }
+        if(flag) validNum.Add(i);
+    }
+    return validNum.ToArray();
 }
 
-Main();
+void VasyaStyle(int number)
+{
+    int[] num = GetValueNum(number);
+    for (int i = 0; i < num.Length; i++)
+    {
+        for (int j = i; j < num.Length; j++)
+        {
+            for (int k = 0; k < num.Length; k++)
+            {
+                if (number == num[i] * num[j] + num[k]) System.Console.WriteLine($"{number} = {num[i]} * {num[j]} + {num[k]}");
+            }
+        }
+    }
+}
